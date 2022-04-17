@@ -1,0 +1,5 @@
+[Desktop Entry]
+Name=DWM
+Encoding=UTF-8
+Exec=/home/jan/.config/autostart.sh
+Type=XSession

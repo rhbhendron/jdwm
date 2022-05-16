@@ -27,7 +27,7 @@ static const char *colors[][3]      = {
  * Jan's values
  */
 
-static const char terminal[] = "alacritty";
+static const char terminal[] = "kitty";
 static const char browser[] = "qutebrowser";
 
 /* tagging */
@@ -86,7 +86,7 @@ static const Layout layouts[] = {
 static char dmenumon[2] = "0"; /* component of dmenucmd, manipulated in spawn() */
 static const char *dmenucmd[]     = { "dmenu_run", "-m", dmenumon, "-fn", dmenufont, "-nb", col_gray1, "-nf", col_gray3, "-sb", col_cyan, "-sf", col_gray4, NULL };
 static const char *termcmd[]      = { terminal, NULL };
-static const char *emacsccmd[]    = { "emacsclient", "-c", NULL };
+static const char *emacsccmd[]    = { "emacsclient", "-c", "-a", "\"\"", NULL };
 static const char *rangercmd[]    = { "kitty", "ranger", NULL };
 static const char *browsercmd[]   = { browser, NULL };
 
